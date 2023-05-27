@@ -212,7 +212,8 @@ li, .nav-items{
     margin: 1em 4em;
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 71s%;
+    border: 2px solid black;    
 }
 
 .trending-items-container {
