@@ -59,6 +59,20 @@ li, .nav-items{
     font-size: 1em;
     padding: .5em;
 }
+
+@media screen and (max-width: 800px) {
+    .nav-links {
+        margin: .5em;
+    }
+    .nav-links li {
+        padding: 0;
+    }
+    #logo {
+        margin-left: 1em;
+    }
+}
+
+
 /* 
 #genre-drop {
     position: relative;
@@ -119,18 +133,28 @@ li, .nav-items{
     position: relative;
     color: #F1F7EE;
 }
+@media screen and (max-width: 800px) {
+    #main-container {
+        margin: .2em 0;
+    }
+}
 
 .premiere-container {
     height: 180px;
-    width: 32%;
+    width: 70%;
     background: rgba(0, 0, 0, 0.291);
     position: absolute;
     top: 55%;
     left: 5%;
 }
 
-#premiere-text{
-    font-size: 1.5em;
+@media screen and (max-width: 800px) {
+    .premiere-container {
+        width: 40%;
+    }
+    #major-movie-title {
+        font-size: 1em;
+    }
 }
 #major-movie-title {
     margin-top: 0px;
@@ -141,7 +165,7 @@ li, .nav-items{
     margin-top: 0px;
 }
 #watch-now {
-    width: 45%;
+    width: 22%;
     height: 45px;
     margin-top: .5em;
     background-color: rgba(0, 0, 0, 0.291);
@@ -209,18 +233,35 @@ li, .nav-items{
     padding-left: 2.8em;
 }
 .trending-container {
-    margin: 1em 4em;
+    margin: .5em 4em;
     display: flex;
     justify-content: space-between;
-    width: 71%;
-    border: 2px solid black;    
+    width: 93%;
+}
+@media screen and (max-width: 800px) {
+    .trending-container {
+        flex-direction: column;
+        margin: .5em 2em;
+    }
 }
 
 .trending-items-container {
+    height: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
     column-gap: 1.5em;
-    row-gap: 1.1em;
+    row-gap: 1.5em;
+}
+@media screen and (max-width: 800px) {
+    .trending-items-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 290px 290px;
+        grid-template-rows: 200px 200px;
+        
+    }
 }
 
 .container-heading {
@@ -241,7 +282,7 @@ li, .nav-items{
     width: 100%;
     height: 100px;
     background-color: rgba(0, 0, 0, 0.348);
-    top: 49%;
+    top: 29%;
     left: 0;
     border-radius: 0 0 10px 10px;
     color: #ffff;
@@ -298,9 +339,19 @@ li, .nav-items{
 
 .extra-container {
     width: 20%;
-    position: absolute;
-    right: 0;
+    /* position: absolute; */
+    /* height: 96vh; */
 }
+ @media screen and (max-width: 800px) {
+    .extra-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: .5em;
+        padding: 0 .2em;
+    }
+} 
 
 
 
@@ -312,6 +363,22 @@ li, .nav-items{
     margin: 0 .2em 1em 0em ;
     border-radius: 10px;
 }
+ @media screen and (max-width: 800px) {
+    .extra-items {
+        margin: .2em;
+        /* margin-right: .2em; */
+        width: 100%;
+
+    }
+ }
+
+ @media screen and (max-width: 800px) {
+    #extra-item-display {
+        display: none;
+    }
+ }
+
+
 .extra-img {
     width: 65px;
     height: 67px;
@@ -332,25 +399,45 @@ li, .nav-items{
     margin: .8em 0;
 }
 
+@media screen and (max-width: 800px) {
+    
+}
+
+
 
 .recent-main-container {
-    width: 75%;
+    /* height: 300px; */
+    width: 73%;
+    margin: -3em 4em;
     display: flex;
     justify-content: space-between;
 }
 
+ @media screen and (max-width: 800px) {
+    .recent-main-container { 
+        width: 90%;
+        margin: 1em 2em;
+    }
+ }
+
 .recent-wrapper {
-    /* position: relative; */
-    width: 50%;
-    margin: 0 4em;
+    border: 2px solid black;
+    width: 60%;
     
 }
 
 .recent-heading-container {
-    margin: .5em 4em;
+    /* margin: .5em 4em; */
     display: flex;
     justify-content: space-between;
-    width: 70.5%;
+    width: 95.5%;
+    color: #7ab2e2;
+}
+
+.recent-heading-container2 {
+    padding: 0 .5em;
+    display: flex;
+    justify-content: space-between;
     color: #7ab2e2;
 }
 .recent-sub-container {
@@ -418,19 +505,28 @@ li, .nav-items{
     z-index: 999;
     color: #7ab1e2aa;
     
-
 }
 
+.rec
+
+
+/* 
 #recent-h3 {
     padding-right: 13.9em;
 }
 #recent-more2 {
     padding-left: 14em;
-}
-#recent-more1 {
+} */
+/* #recent-more1 {
     padding-right: 2.6em;
 }
 
 .fa-caret-right {
     padding: 0 .2em;
+} */
+
+@media screen and (max-width: 800px) {
+    #recent-h3 {
+    
+    }
 }
