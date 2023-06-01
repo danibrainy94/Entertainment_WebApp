@@ -22,6 +22,11 @@ nav {
     color: #7ab2e2;
     font-size: 1.5em;
 }
+@media screen and (max-width: 600px) {
+    #logo {
+        padding: .5em 0;
+    }
+}
 
 .nav-links {
     display: inline-block;
@@ -30,14 +35,38 @@ nav {
     margin: .5em;
 }
 @media screen and (max-width: 600px) {
-    .nav {
-        align-items: safe;
+    nav {
+        align-items: normal;
     }
     .nav-links {
         flex-direction: column;
+        display: none;
 
     }
 }
+
+.hamburger {
+    display: flex;
+    flex-direction: row;
+    margin: .6em 1em;
+    float: right;
+    visibility: hidden;
+}
+
+.ham-children {
+    width: 4px;
+    height: 25px;
+    background: #7ab2e2;
+    
+
+}
+@media screen and (max-width: 600px) {
+    .ham-children {
+        margin: 0 .2em;
+        visibility: visible;
+    }
+}
+
 
 
 .nav-links li {
