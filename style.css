@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     /* border: 2px solid blue; */
     
 }
@@ -40,7 +41,8 @@ nav {
     }
     .nav-links {
         flex-direction: column;
-        display: none;
+        visibility: hidden;
+        padding: 0 1em;
 
     }
 }
@@ -49,8 +51,8 @@ nav {
     display: flex;
     flex-direction: row;
     margin: .6em 1em;
-    float: right;
     visibility: hidden;
+
 }
 
 .ham-children {
@@ -158,6 +160,7 @@ li, .nav-items{
 
 .container {
     background: #F2F8FF;
+    width: 100vw;
 }
 
 #main-container {
@@ -417,9 +420,7 @@ li, .nav-items{
 }
 
 .extra-container {
-    width: 20%;
-    /* position: absolute; */
-    /* height: 96vh; */
+   padding: 0 2em;
 }
  @media screen and (max-width: 800px) {
     .extra-container {
@@ -437,7 +438,7 @@ li, .nav-items{
 .extra-items {
     display: flex;
     width: 220px;
-    height: 100px;
+    height: 90px;
     background: #FDFFF7;
     margin: 0 .2em 1em 0em ;
     border-radius: 10px;
@@ -492,8 +493,8 @@ li, .nav-items{
 
 .recent-main-container {
     /* height: 300px; */
-    width: 73%;
-    margin: -10em 4em;
+    width: 69%;
+    margin: -7em 4em;
     display: flex;
     justify-content: space-between;
 }
@@ -582,7 +583,7 @@ li, .nav-items{
 }
 #recent-shows-image {
     display: block;
-    width: 400px;
+    width: 350px;
     height: 200px;
     max-width: 100%;
     border-radius: 10px;
@@ -593,7 +594,7 @@ li, .nav-items{
 }
 @media screen and (max-width: 600px) {
     #recent-shows-image {
-        width: 100%;
+        width: 97%;
         height: 300px;
     }
 }
