@@ -6,112 +6,7 @@
     
 }
 
-/* body {
-    background: #caf0f8;
-    margin: 2em;
-} */
-    
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
 
-@media screen and (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: normal;
-        justify-content: left;
-
-    }
-}
-
-
-#logo {
-    margin-left: 2.5em;
-    color: #7ab2e2;
-    font-size: 1.5em;
-}
-@media screen and (max-width: 600px) {
-    #logo {
-        padding: .5em 0;
-    }
-}
-
-.nav-links {
-    display: block;
-    display: flex;
-    align-items: center;
-    margin: .5em;
-    position: absolute;
-}
-@media screen and (max-width: 600px) {
-    nav {
-        align-items: normal;
-    }
-    .nav-links {
-        flex-direction: column;
-        /* visibility: hidden; */
-        padding: 0 1em;
-        background: #7ab2e2;
-
-    }
-}
-
-.nav-toggle {
-    border: none;
-    visibility: hidden;
-}
-@media screen and (max-width: 600px) {
-    .nav-toggle {
-        visibility: visible;
-        
-    }
-    .nav-toggle:hover {
-        transform: rotate(90deg);
-        cursor: pointer;
-        visibility: visible;
-    }
-}
-
-.fa-bars {
-    font-size: 2.5em;
-    color: #7ab2e2;
-    background: black;
-    
-}
-
-
-
-.nav-links li {
-    padding: 0em 1em;
-    text-decoration: none;
-    
-}
-
-li, .nav-items{
-    text-decoration: none;
-    list-style-type: none;
-    color: #F1F7EE;
-}
-
-.nav-items {
-    transition: all 0.2s ease;
-    border: none;
-    margin-bottom: .3em;
-}
-
-.nav-items:hover {
-    border-bottom: px solid #bde0fe;
-    border-radius: 5px;
-    color: #bde0fe;
-}
-
-.fa-caret-down {
-    font-size: 1em;
-    padding: .5em;
-}
 
 @media screen and (max-width: 1000px) {
     .nav-links {
@@ -124,49 +19,6 @@ li, .nav-items{
         margin-left: 1em;
     }
 }
-
-
-/* 
-#genre-drop {
-    position: relative;
-}
-
-
-.nav-drop {
-    display: block; 
-    position: absolute;
-    top: 11%;
-    left: 76.5%;
-
-    
-} */
-
-/* .nav-drop-items {
-    display: block;
-    font-size: 1em;
-    text-decoration: none;
-    color: #ffffff;
-    padding: .7em;
-    border-bottom: 2px solid white;
-    border-radius: 0px 0px 10px 10px;
-    visibility: hidden;
-    
-}
-
-.nav-drop:hover .nav-drop-items {
-    visibility: hidden;
-}
-.nav-drop li:active {
-    display: block;
-} */
-
-
-
-
-
-
-
-
 
 
 
@@ -189,7 +41,7 @@ li, .nav-items{
 }
 @media screen and (max-width: 800px) {
     #main-container {
-        margin: .6em 0;
+        margin: .6em 1em;
     }
 }
 
