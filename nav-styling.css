@@ -35,7 +35,32 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
-    transition: all .5s linear;
+    transition: all .2s;
+    
+}
+
+.links li a :active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.links li a:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+
+.links li a:hover {
+    display: inline-block;
+    border-radius: 2px;
+    border-bottom: 3px solid white;
+    font-weight: 500;
+    color: #7ab2e2;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -46,7 +71,7 @@ nav {
         position: absolute;
         top: 100%;
         left: 0;
-        box-shadow: 0 3px 1px 1px rgba(128, 128, 128, 0.655);
+        box-shadow: 0 3px 1px 1px #7ab1e21f;
         height: 0;
         overflow: hidden;
         transition: all .5s linear;
@@ -74,23 +99,27 @@ nav {
         transform: rotate(90deg);
     }
 
-    /* .links li a {
+    .links li a {
         transition: all .5s linear;
-    } */
+    }
 
     .links li {
         padding: .5em;
         background: rgba(0, 0, 0, 0.367);
-        transition: all .5s linear;
+        transition: all .2s linear;
     }
+
+    
 
     .links li a:hover,
     .links li a:focus,
     .links li a:active {
-        padding-left: .5em;
+        border-bottom: none;
+        padding-left: .3em;
         letter-spacing: 2px;
         color: #7ab2e2;
-        transition: all .5s linear;
+        transform: translateY(0);
+        transition: all .2s linear;
     }
 
     .nav-toggle {

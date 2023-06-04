@@ -86,6 +86,7 @@
     background-color: #7ab2e2;
     color: black;
     border: 2px solid #F1F7EE;
+    transform: translateY(2px);
 }
 
 
@@ -321,12 +322,24 @@
     #extra-item-display {
         display: none;
     }
+    
  }
 
  @media screen and (max-width: 600px) {
     #extra-item-display2 {
         display: none;
     }
+    .featured-items {
+        width: 45%;
+    }
+    #featured-no-display,
+    #featured-play3 {
+        display: none;
+    }
+    #featured-play2 {
+        left: 65%;
+    }
+
  }
 
 
