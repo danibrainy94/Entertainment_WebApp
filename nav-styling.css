@@ -18,17 +18,24 @@ nav {
     margin: 0 1em;
 }
 
+.links {
+    display: flex;
+    padding: 1em;
+}
+
 .links li {
     display: block;
     padding: .5em;
     background: rgba(0, 0, 0, 0.367);
     transition: all .5s linear;
+    background: none;
 }
 
 .links li a {
     text-decoration: none;
     color: white;
-    /* transition: all .5s linear; */
+    font-size: 1.2em;
+    transition: all .5s linear;
 }
 
 
@@ -43,6 +50,9 @@ nav {
         height: 0;
         overflow: hidden;
         transition: all .5s linear;
+        flex-direction: column;
+        font-size: .8em;
+        padding: .2em;
     }
 
     nav {
@@ -64,9 +74,9 @@ nav {
         transform: rotate(90deg);
     }
 
-    .links li a {
+    /* .links li a {
         transition: all .5s linear;
-    }
+    } */
 
     .links li {
         padding: .5em;
@@ -103,7 +113,7 @@ nav {
 
         /* special class to be activated by js when hamburger button is clicked */
     .show-links {
-        height: 8.5rem;
+        height: 10rem;
         overflow: hidden;
         transition: all .5s ease-out;
     }
